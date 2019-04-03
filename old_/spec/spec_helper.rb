@@ -5,12 +5,19 @@ require 'httparty/request'
 require 'httparty/response/headers'
 require 'rspec'
 
+@rspec_yml = YAML.load_file("#{Dir.pwd}/support/rspec.yml")
+@ambiente = @rspec_yml['ambiente']
+CONFIG = YAML.load_file("#{Dir.pwd}/support/data/#{@ambiente}.yml")
+
 #reference file Pokemon
 require_relative '../services/pokemon_service.rb'
 
 RSpec.configure do |config|
   # Inserting the module "Pokemon" as Global
   include Pokemon
+
+  config.color = true
+  config.formatter = :documentation
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

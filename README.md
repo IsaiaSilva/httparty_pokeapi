@@ -32,6 +32,16 @@ _através do terminal utilizar o comando: cucumber
 _001 - Instalar as gems necessárias (GemFile) -> bundle install
      - Adicionando requires no spec_helper.rb
 
+Results API
+200 – Sucess
+201 – Criado com sucesso
+201 – Sem conteúdo
+400 – Parâmetros inválidos
+401 – Não autenticado
+403 – Não autorizado
+404 – Não encontrado
+500 – Erro interno do servidor
+
 
 [contato]
 qa.eng.isaiasilva@gmail.com
