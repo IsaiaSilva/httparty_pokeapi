@@ -7,8 +7,9 @@ _ambiente: https://pokeapi.co/
 _exercício para testar uma API (https://pokeapi.co/) apenas com o verbo GET.
 
 [ParaExecutar]
-Navegue até o diretório: "Cucumber" httparty_pokeapi\cucumber
-Execute: bundle exec cucumber
+Navegue até o diretório: "Cucumber" -> ..httparty_pokeapi\cucumber
+
+Execute ->  bundle exec cucumber
 
 [frameworks]
 _cucumber
